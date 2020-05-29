@@ -42,17 +42,20 @@ public class Reta extends JFrame{
 
         /***
          * A cada interação do nosso loop, é incrementado um ponto em nosso x
-         * e calculado nosso novo ponto Y com nosso coeficiente Angular
+         * e é calculado nosso novo ponto Y com nosso coeficiente Angular (m)
          * e por fim usando o metodo fillOval para desenhar um pixel em nossa tela.
          */
         for (int i = x1; i <= x2; i++) {
-
             //Calculando novo ponto de Y
             float result = (m * i) + b;
             int newY = (int) result;
 
+            //Desenhando o pixel em nossa janela com a função fillOval
             g.fillOval(i, newY, 1, 1);
             tempo(10);
+            if (i == x2){
+                i = x1;
+            }
         }
     }
 
