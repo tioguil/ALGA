@@ -3,6 +3,10 @@ import java.awt.Graphics;
 
 import javax.swing.JFrame;
 
+/***
+ *  Classe Rotacao demonstra a rotação de um retangulo
+ *  USJT_2020/1 - CCP4BN-BUA
+ */
 public class Rotacao extends JFrame {
 
     int p1[] = new int[4];
